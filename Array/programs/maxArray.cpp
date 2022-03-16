@@ -1,5 +1,4 @@
 #include<iostream>
-#include<climits>
 using namespace std;
 
 int main(){
@@ -7,12 +6,11 @@ int main(){
     int n;
     cin>>n;
     int arr[n];
-    for(int i=0;i<n;i++)
-    {
+    for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    int maxNo=0; //max possible value.
-    int minNo=0;  //min possible value.
+    int maxNo=0; //max possible value. //camel casing 
+    int minNo=0;  //min possible value. //camel casing text-decoration = kabab casing.
     for(int i=0;i<n;i++){
         /*if(array[i]>maxNo){
             maxNo = arr[i];
@@ -23,12 +21,12 @@ int main(){
         }*/
 
         //Alternative way for time complexity...
-        maxNo=max(maxNo,arr[i]);
         minNo=min(minNo,arr[i]);
+        maxNo=max(maxNo,arr[i]);
+        
 
     }
     cout<<maxNo<<" "<<minNo<<endl;
     return 0;
-    
     
 }

@@ -7,6 +7,7 @@ int binarySearching(int arr[],int n, int key){
     int e=n;
     while(s<=n){
         int mid= (s+e)/2;
+        cout<<"mid value is:"<<mid<<endl;
 
         if(arr[mid]==key){
             return mid;
@@ -37,4 +38,4 @@ int main(){
 
     return 0;
 }
-//Time comlexity - 0(logn base 2)  -----better because it takes less time.
+//Time comlexity - 0(log n base 2)  -----better because it takes less time.
